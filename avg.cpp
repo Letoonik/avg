@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
                 currentChar = argv[i][k];
             }
             else {
-                std::cout << "Invalid character detected! (Use a dot instead of a colon)" << std::endl;
+                std::cout << "Invalid character detected! (Use a dot instead of a comma)" << std::endl;
                 return 2;
             }
         }
