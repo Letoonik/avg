@@ -6,7 +6,7 @@ double avg(std::vector<double> input) {
     int VectorSize = input.size();
     double avgOfInput = 0;
 
-    for(int i = 0; i <= VectorSize; i++){
+    for(int i = 0; i < VectorSize; i++){
         avgOfInput += input[i];
     }
     avgOfInput /= VectorSize;
@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
     std::vector<double> f_Input;
     
     for(int i = 1; i < argc; i++) {
-        
         int k = 0;
         char currentChar = argv[i][k];
         //Check invalid chars
@@ -40,7 +39,6 @@ int main(int argc, char *argv[])
         }
         f_Input.push_back(atof(argv[i]));
     }
-
     std::cout << std::endl << avg(f_Input) << std::endl;
     return 0;
 }
