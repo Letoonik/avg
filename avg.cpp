@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
         char currentChar = argv[i][k];
         //Check invalid chars
         while(currentChar != 0) {
-            if(currentChar > 44 && currentChar < 58) {
+            if(currentChar > 44 && currentChar < 58 && currentChar != 47) {
                 k++;
                 currentChar = argv[i][k];
             }
